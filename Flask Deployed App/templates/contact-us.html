@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Contact Us
+{% endblock pagetitle %}
+
+{% block body %}
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%; font-weight: 400; color: black;">
+            <b>Contact-Info</b>
+        </h1>
+        <p class="lead" style="font-weight: 500; color: black;">
+            For Any Queries & Suggestions Contact the social media Handles.
+        </p>
+    </div>
+</div>
+
+<div class="row p-3">
+    <!-- Left Column: About Me + Social Media -->
+    <div class="col">
+        <div class="p-5 bg-white shadow rounded-lg" style="height: 95%; color: black;">
+            <center>
+                <h3>Gautham Rishab</h3>
+                <p class="lead" style="font-weight: 350;">
+                    Hi, I am Gautham Rishab. I am currently pursuing a Bachelor's degree in Information Technology. 
+                    My main focus is on <b>Machine Learning, Deep Learning, and Artificial Intelligence</b>. 
+                    I am also passionate about <b>Data Science</b> and <b>App Development</b>. 
+                    I enjoy building intelligent systems and exploring innovative solutions that can make a real-world impact.
+                </p>
+            </center>
+
+            <h5>Social Media Handles:</h5>
+
+            <!-- Gmail -->
+            <a target="_blank" href="mailto:rishabgautham@gmail.com">
+                <img src="{{ url_for('static', filename='images/gmail.jpg') }}" height="40" width="40">
+            </a> <span style="color:black;">rishabgautham@gmail.com</span>
+            <br><br>
+
+            <!-- Medium -->
+            <a target="_blank" href="https://medium.com/@rishabgautham">
+                <img src="{{ url_for('static', filename='images/instagram.jpg') }}" height="44" width="44">
+            </a> <span style="color:black;">@rishabgautham</span>
+            <br><br>
+
+            <!-- GitHub -->
+            <a target="_blank" href="https://github.com/GAUTHAMRISHAB">
+                <img src="{{ url_for('static', filename='images/github.png') }}" height="40" width="40">
+            </a> <span style="color:black;">GAUTHAMRISHAB</span>
+            <br><br>
+
+            <!-- LinkedIn -->
+            <a target="_blank" href="https://www.linkedin.com/in/gautham-rishab-9679562b9/">
+                <img src="{{ url_for('static', filename='images/linkedin.jpg') }}" height="40" width="40">
+            </a> <span style="color:black;">gauthamrishab</span>
+        </div>
+    </div>
+
+    <!-- Right Column (Empty for now) -->
+    <div class="col">
+    </div>
+</div>
+
+
+{% endblock body %}

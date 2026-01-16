@@ -1,0 +1,7 @@
+plant diseas prediction
+
+
+go to d:\Gautham\Project\New folder\Plant-Disease-Detection\Flask Deployed App in file explorer and type cmd
+
+python app.py
+
