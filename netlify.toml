@@ -1,0 +1,12 @@
+[build]
+  command = "pip install -r \"Flask Deployed App/requirements.txt\""
+  publish = "Flask Deployed App/static"
+
+[build.environment]
+  PYTHON_VERSION = "3.9"
+  FLASK_APP = "app.py"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
